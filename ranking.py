@@ -53,28 +53,35 @@ def twitterreq(url, method, parameters):
 
 #https://dev.twitter.com/docs/api/1/get/users/show
 def fetchsamples(page):
-  keywords = 'breast cancer'
-  url = 'http://search.twitter.com/search.json?q=' + keywords + '&page=' + str(page)
+  keywords = '"breast carcino"'
+  url = 'https://api.twitter.com/1.1/search/tweets.json?q=' + keywords + '&count=' + str(page)
   print '******' + url
   parameters = []
   response = twitterreq(url, "GET", parameters)
   for line in response:
     tdata = json.loads(line)
-    for tuit in tdata['results']:
+    for tuit in tdata['statuses']:
       #print tuit['from_user'], tuit['from_user_id'], tuit['from_user_name']
-      user_url = 'https://api.twitter.com/1/users/show.json?screen_name=' + tuit['from_user'] + '&include_entities=true'
-      user = urllib.urlopen(user_url).read()
-      user_data = json.loads(user)
+      #user_url = 'https://api.twitter.com/1.1/users/show.json?screen_name=' + tuit['from_user'] + '&include_entities=true'
+      #user = urllib.urlopen(user_url).read()
+      #user_data = json.loads(user)
+      
+      #user_metadata = tuit['user']
+      #print tuit['user']['name']
       
       # attributes each user
-      u_name = user_data.get('screen_name')
-      u_followers = user_data.get('followers_count')
-      u_friends = user_data.get('friends_count')
-      u_tweets = user_data.get('statuses_count')
+      u_name = tuit['user']['name']
+      u_screen_name = tuit['user']['screen_name']
+      u_followers = tuit['user']['followers_count']
+      u_friends = tuit['user']['friends_count']
+      u_tweets = tuit['user']['statuses_count']
+      u_favourites = tuit['user']['favourites_count']
+      u_verified = tuit['user']['verified']
       u_weight = u_followers * 0.4 + u_friends * 0.3 * u_tweets * 0.3
       
-      print 'user=', u_name, 'followers=', u_followers, 'friends=', u_friends, 'tweets=', u_tweets, 'weight=', u_weight
+      print 'user=', u_screen_name, 'followers=', u_followers, 'friends=', u_friends, 'tweets=', u_tweets, 'weight=', u_weight, 'favourites=', u_favourites, 'verified=', u_verified
 
 if __name__ == '__main__':
-  for x in range(1,10):
-    fetchsamples(x)
+  #for x in range(1,4):
+  x = 100
+  fetchsamples(x)
