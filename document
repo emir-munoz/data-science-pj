@@ -1,0 +1,7 @@
+Abstract:
+Our goal is to compare the mood of patients that are following official and high quality hashtags on twitter Vs. low quality hashtags. To do so we chose a set of keywords [Oya: according to what?] and we searched twitter for tweets that are related to that keywords. We ranked 50 twitter search results[according to our algorithms] and we only consider the top 20 and we are planning to send them to experts to classify them for us into 3 clusters : high quality, mediam quality and low quality. The next step is to compute sentiment of followers of low/mediam/high quality users to see if the mood of their followers is different or not. To do so, we need a corpus to compute sentiment of users in the context of patient related keywords. That is a specific corpus that relates each keyword to its associated sentiment. 
+
+Related works:
+
+Refrences:
+
