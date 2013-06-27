@@ -1,0 +1,4 @@
+******https://api.twitter.com/1.1/search/tweets.json?q=metasta&count=100
+user= meliiarahman followers= 182 friends= 163 tweets= 2525 weight= 37114.55 favourites= 5 verified= False
+user= metasta followers= 48 friends= 41 tweets= 521 weight= 1941.69 favourites= 6 verified= False
+user= metasta followers= 48 friends= 41 tweets= 521 weight= 1941.69 favourites= 6 verified= False
