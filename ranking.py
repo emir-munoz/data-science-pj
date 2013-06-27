@@ -51,9 +51,12 @@ def twitterreq(url, method, parameters):
   return response
 
 
+#https://dev.twitter.com/docs/api/1.1/get/search/tweets
+#https://dev.twitter.com/docs/api/1.1/get/users/show
+# deprecated
 #https://dev.twitter.com/docs/api/1/get/users/show
 def fetchsamples(page):
-  keywords = '"breast carcino"'
+  keywords = '"breast cancer mastectomy"'
   url = 'https://api.twitter.com/1.1/search/tweets.json?q=' + keywords + '&count=' + str(page)
   print '******' + url
   parameters = []
