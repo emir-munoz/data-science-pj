@@ -1,0 +1,10 @@
+******https://api.twitter.com/1.1/search/tweets.json?q=lymphom&count=100
+user= Datshou followers= 40 friends= 82 tweets= 2051 weight= 15152.38 favourites= 246 verified= False
+user= leukaemie_hilfe followers= 12726 friends= 13917 tweets= 5518 weight= 6916550.94 favourites= 0 verified= False
+user= MadDaniels1 followers= 549 friends= 516 tweets= 19071 weight= 885876.84 favourites= 4751 verified= False
+user= Cancer_bio followers= 273 friends= 94 tweets= 17664 weight= 149546.64 favourites= 0 verified= False
+user= Cancer_bio followers= 273 friends= 94 tweets= 17664 weight= 149546.64 favourites= 0 verified= False
+user= leukaemie_hilfe followers= 12726 friends= 13917 tweets= 5518 weight= 6916550.94 favourites= 0 verified= False
+user= leukaemie_hilfe followers= 12726 friends= 13917 tweets= 5518 weight= 6916550.94 favourites= 0 verified= False
+user= leukaemie_hilfe followers= 12726 friends= 13917 tweets= 5518 weight= 6916550.94 favourites= 0 verified= False
+user= leukaemie_hilfe followers= 12726 friends= 13917 tweets= 5518 weight= 6916550.94 favourites= 0 verified= False
