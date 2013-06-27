@@ -1,0 +1,3 @@
+******https://api.twitter.com/1.1/search/tweets.json?q=mammogr&count=100
+user= toresalte followers= 265 friends= 425 tweets= 365 weight= 14067.25 favourites= 6 verified= False
+user= pamplainandtall followers= 145 friends= 262 tweets= 8073 weight= 190419.34 favourites= 840 verified= False
